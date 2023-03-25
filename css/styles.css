@@ -43,9 +43,13 @@ img {
   border: none;
 }
 .container {
-  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 428px;
+  }
 }
 .logo {
   font-family: var(--secondary-font);
@@ -172,8 +176,7 @@ header {
 /* =========== /HEADER =========== */
 /* ============ HERO ============ */
 .hero {
-  text-align: center;
-  padding: 188px 0;
+  padding: 112px 0;
   background-color: var(--background-color);
   max-width: 1440px;
   margin: 0 auto;
@@ -187,11 +190,12 @@ header {
 }
 .hero-title {
   text-align: center;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: #ffffff;
-  max-width: 496px;
+  max-width: 320px;
   margin: 0 auto;
 }
 .hero-btn {
@@ -200,7 +204,7 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
-  margin: 48px auto 0;
+  margin: 72px auto 0;
   transition: background-color var(--transition-dur-and-func);
 }
 .hero-btn:hover,
@@ -211,25 +215,26 @@ header {
 /* ============ /HERO ============ */
 /* ========= ADVANTAGES ============= */
 .advantages {
-  padding: 120px 0;
+  padding: 96px 0;
 }
-.advantages-list {
-  display: flex;
-  gap: 24px;
+@media screen and (max-width: 767px) {
+  .advantages-item {
+    margin-bottom: 72px;
+  }
+  .advantages-item:last-child {
+    margin-bottom: 0;
+  }
 }
-/* .advantages-item {
-} */
 .advantages-thumb {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 264px;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
+  display: none;
 }
 .advantages-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
   color: var(--subtitle-color);
   margin-bottom: 8px;
 }
@@ -238,34 +243,25 @@ header {
 }
 /* =========== /ADVANTAGES ============== */
 /* ============== DOING ================== */
-.doing {
-  padding-bottom: 120px;
-}
-.doing-title {
-  color: #2e2f42;
-  margin-bottom: 72px;
-}
-.doing-list {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-}
-.doing-item {
-  width: calc((100% - gap * 2) / 3);
+@media screen and (max-width: 1199px) {
+  .doing {
+    display: none;
+  }
 }
 /* ============== /DOING ================== */
 /* ================= TEAM ================= */
 .team {
   background: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0 128px;
 }
 .team-title {
   margin-bottom: 72px;
 }
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 72px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .team-item {
   width: calc((100% - gap * 3) / 4);
@@ -316,15 +312,16 @@ header {
 /* =============== /TEAM ================ */
 /* ============== COSTUMERS =============== */
 .costumes {
-  padding-top: 130px;
-  padding-bottom: 120px;
+  padding: 96px 0;
 }
 .costumers-title {
   margin-bottom: 72px;
 }
 .costumers-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  column-gap: 16px;
+  row-gap: 72px;
   flex-wrap: wrap;
 }
 /* .costumers-item {
@@ -334,7 +331,7 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 168px;
+  width: 190px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -446,33 +443,30 @@ header {
 /* =============== FOOTER ==============*/
 .footer {
   background-color: var(--background-color);
-  padding: 100px 0;
-  /* max-width: 1440px; */
-  margin: 0 auto;
-}
-.footer-container {
-  display: flex;
-  align-items: centre;
-  flex-wrap: wrap;
+  padding: 96px 0;
 }
 .footer-logo-wrap {
-  margin-right: 119px;
+  margin-bottom: 72px;
 }
 .footer-logo {
   color: #f4f4fd;
+  justify-content: center;
   margin-bottom: 16px;
 }
 .footer-logo span {
   color: var(--logo-span-color);
 }
 .footer-text {
+  text-align: center;
   color: #e7e9fc;
-  width: 264px;
+  width: 268px;
+  margin: 0 auto;
 }
 .footer-social {
-  margin-right: 80px;
+  margin-bottom: 72px;
 }
 .footer-social-text {
+  text-align: center;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 16px;
@@ -480,6 +474,7 @@ header {
 .footer-social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
 }
 .footer-social-item {
@@ -493,7 +488,7 @@ header {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #4d5ae5;
   transition: background-color var(--transition-dur-and-func);
 }
 .footer-social-link:hover,
@@ -507,9 +502,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 .footer-form-text {
+  text-align: center;
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 16px;
@@ -517,7 +514,7 @@ header {
 .footer-modal-form-input {
   color: #ffffff;
   background-color: inherit;
-  width: 264px;
+  width: 350px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 9px 16px;
@@ -585,13 +582,13 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 408px;
-  height: 576px;
+  width: 380px;
+  height: 586px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 0 24px;
+  padding: 0 10px;
 }
 .modal-close-btn {
   position: absolute;

@@ -1,0 +1,82 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .hero {
+    padding: 188px 0;
+  }
+  .hero-btn {
+    margin-top: 48px;
+  }
+  .advantages {
+    padding: 120px 0;
+  }
+  .advantages-list {
+    gap: 24px;
+  }
+  .advantages-content {
+    width: 264px;
+  }
+
+  .advantages-thumb {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .advantages-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .doing {
+    padding-bottom: 120px;
+  }
+  .doing-title {
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+  .doing-list {
+    display: flex;
+    gap: 24px;
+  }
+  .doing-item {
+    width: calc((100% - gap * 2) / 3);
+  }
+  .team {
+    padding: 120px 0;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - gap * 3) / 4);
+  }
+  .costumes {
+    padding: 120px 0;
+  }
+  .costumers-list {
+    gap: 24px;
+  }
+  .costumer-link {
+    width: 168px;
+    height: 88px;
+  }
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-container {
+    padding-left: 0;
+  }
+  .footer-logo-wrap {
+    margin: 0 120px 0 0;
+  }
+  .footer-social {
+    margin: 0 80px 0 0;
+  }
+}

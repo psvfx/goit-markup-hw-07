@@ -1,0 +1,81 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .hero {
+    padding: 112px 0;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+  .hero-btn {
+    margin-top: 36px;
+  }
+  .advantages-list {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 72px;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 1199px) {
+    .advantages-content {
+      width: 356px;
+    }
+  }
+  .advantages-subtitle {
+    text-align: left;
+  }
+  .advantages-item {
+    margin-bottom: none;
+  }
+  .team {
+    padding: 96px 0 104px;
+  }
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .costumers-list {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .costumer-link {
+    width: 168px;
+    height: 88px;
+  }
+  /* =============== FOOTER ==============*/
+  .footer-container {
+    display: flex;
+    padding-left: 108px;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+  }
+  .footer-logo-wrap {
+    margin-right: 24px;
+  }
+  .footer-logo {
+    justify-content: left;
+  }
+  .footer-text {
+    text-align: left;
+    width: 264px;
+  }
+  .footer-social-text {
+    text-align: left;
+  }
+  .footer-form {
+    gap: 24px;
+  }
+  .footer-form-text {
+    text-align: left;
+  }
+  .footer-modal-form-input {
+    width: 264px;
+  }
+  .modal {
+    width: 408px;
+    padding: 0 23px;
+  }
+}
