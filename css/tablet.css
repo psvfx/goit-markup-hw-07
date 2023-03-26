@@ -2,6 +2,19 @@
   .container {
     max-width: 768px;
   }
+  /* ====== HEADER ======= */
+  .mobile-menu {
+    display: none;
+  }
+  .header-btn-mobile-open {
+    display: none;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
   .hero {
     padding: 112px 0;
   }

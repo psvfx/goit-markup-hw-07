@@ -101,19 +101,16 @@ img {
 header {
   border-bottom: 1px solid #e7e9fc;
 }
-.header-container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
+/* .header-container {
+} */
 .header-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
 }
 .header-logo {
   color: #2e2f42;
-  margin-right: 76px;
   padding: var(--header-paddig-link);
 }
 .header-logo span {
@@ -172,6 +169,91 @@ header {
 .address-link:hover,
 .address-link:focus {
   color: var(--link-hover-color);
+}
+/* ======= MOBILE MENU ======= */
+@media screen and (max-width: 767px) {
+  .header-list,
+  .address {
+    display: none;
+  }
+  .header-btn-mobile-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-height: 796px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    /* затемнення просвіту в кінці меню */
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    /* приховування меню */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-dur-and-func),
+      visibility var(--transition-dur-and-func);
+  }
+  .mobile-menu.is-open {
+    /* відкриття меню */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .mobile-menu-container {
+    position: relative;
+    padding: 80px 0 40px 40px;
+  }
+  .header-btn-mobile-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid #2e2f42;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+    transition: fill var(--transition-dur-and-func),
+      background-color var(--transition-dur-and-func),
+      border var(--transition-dur-and-func);
+  }
+  .header-btn-mobile-close:hover,
+  .header-btn-mobile-close:focus {
+    fill: #ffffff;
+    background-color: #404bbf;
+    border: none;
+  }
+  .mobile-menu-item {
+    margin-bottom: 40px;
+  }
+  .mobile-menu-item:last-child {
+    margin-bottom: 284px;
+  }
+  .mobile-menu-link {
+    position: relative;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    padding: 10px 0;
+    transition: color var(--transition-dur-and-func);
+  }
+  .mobile-menu-link:hover,
+  .mobile-menu-link:focus {
+    color: var(--link-hover-color);
+  }
 }
 /* =========== /HEADER =========== */
 /* ============ HERO ============ */
