@@ -2,6 +2,20 @@
   .container {
     max-width: 1158px;
   }
+  .header-logo {
+    margin-right: 76px;
+  }
+  .address-list {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+  }
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: var(--header-paddig-link);
+  }
   .hero {
     padding: 188px 0;
   }

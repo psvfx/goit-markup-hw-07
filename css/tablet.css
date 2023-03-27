@@ -14,7 +14,49 @@
     align-items: center;
     flex-wrap: wrap;
   }
-
+  .header-logo {
+    margin-right: 120px;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: var(--header-paddig-link);
+    transition: color var(--transition-dur-and-func);
+  }
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--link-hover-color);
+  }
+  .address {
+    margin-left: auto;
+  }
+  @media screen and (max-width: 1199px) {
+    .address-item:nth-child(1) {
+      margin-bottom: 12px;
+    }
+  }
+  .address-link {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color var(--transition-dur-and-func);
+  }
+  .address-link:hover,
+  .address-link:focus {
+    color: var(--link-hover-color);
+  }
+  /* ====== /HEADER ======= */
+  /* ======= HERO ========= */
   .hero {
     padding: 112px 0;
   }
@@ -26,6 +68,8 @@
   .hero-btn {
     margin-top: 36px;
   }
+  /* ======= /HERO ========= */
+  /* ======= ADVANTAGES ========= */
   .advantages-list {
     display: flex;
     column-gap: 24px;
@@ -43,6 +87,8 @@
   .advantages-item {
     margin-bottom: none;
   }
+  /* ======= /ADVANTAGES ========= */
+  /* ======= TEAM ========= */
   .team {
     padding: 96px 0 104px;
   }
@@ -50,6 +96,8 @@
     column-gap: 24px;
     row-gap: 64px;
   }
+  /* ======= /TEAM ========= */
+  /* ======= COSTUMERS ========= */
   .costumers-list {
     column-gap: 24px;
     row-gap: 72px;
@@ -58,11 +106,28 @@
     width: 168px;
     height: 88px;
   }
-  /* =============== FOOTER ==============*/
+  /* ======= COSTUMERS ========= */
+  /* === PORTFOLIO: FILTER and PROJECTS ===*/
+  .filter {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  .filter-list {
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+  .filter-btn {
+    padding: 12px 24px;
+  }
+  .projects-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  /* ========= FOOTER ===========*/
   .footer-container {
     display: flex;
     padding-left: 108px;
-    /* justify-content: center; */
     flex-wrap: wrap;
   }
   .footer-logo-wrap {
@@ -91,4 +156,5 @@
     width: 408px;
     padding: 0 23px;
   }
+  /* ========= /FOOTER ===========*/
 }
