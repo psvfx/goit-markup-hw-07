@@ -114,17 +114,6 @@ header {
 .header-logo span {
   color: var(--logo-span-color);
 }
-.current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  background: #404bbf;
-  border-radius: 2px;
-  bottom: -3px;
-  left: 0;
-}
 /* ======= MOBILE MENU ======= */
 @media screen and (max-width: 767px) {
   .header-list,
@@ -214,6 +203,17 @@ header {
   .mobile-menu-link:hover,
   .mobile-menu-link:focus {
     color: var(--link-hover-color);
+  }
+  .current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    border-radius: 2px;
+    bottom: -3px;
+    left: 0;
   }
   .mobile-menu-address-item {
     font-style: normal;
