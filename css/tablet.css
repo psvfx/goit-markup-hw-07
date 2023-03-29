@@ -186,6 +186,7 @@
   }
   .footer-modal-form-input {
     width: 264px;
+    margin-bottom: 0;
   }
   .modal {
     width: 408px;
