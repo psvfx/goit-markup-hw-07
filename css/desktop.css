@@ -65,6 +65,9 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
+  .advantages-text {
+    font-weight: 400;
+  }
   .doing {
     padding-bottom: 120px;
   }

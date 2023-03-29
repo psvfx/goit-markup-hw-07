@@ -35,6 +35,9 @@
   .header-link:focus {
     color: var(--link-hover-color);
   }
+  .current {
+    color: #404bbf;
+  }
   .current::after {
     content: '';
     display: block;
@@ -172,7 +175,11 @@
     text-align: left;
   }
   .footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
+    flex-wrap: wrap;
   }
   .footer-form-text {
     text-align: left;
