@@ -155,6 +155,10 @@
     row-gap: 72px;
     column-gap: 24px;
   }
+  .projects-list:last-child {
+    justify-content: left;
+  }
+
   /* ========= FOOTER ===========*/
   .footer-container {
     display: flex;
